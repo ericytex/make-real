@@ -1,0 +1,16 @@
+[project]
+name = "local-agent"
+version = "0.1.0"
+description = "Minimal local agent with tools and OpenAI reasoning loop"
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+    "openai>=1.35.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.0",
+    "duckduckgo-search>=6.3.1",
+    "beautifulsoup4>=4.12.3",
+]
+
+[project.scripts]
+local-agent = "agent.cli:main"
